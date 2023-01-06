@@ -1,0 +1,25 @@
+{% load static %}
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4">NUPRO</span>
+      </a>
+      
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/lokasi/" class="nav-link" style="color: black;">TPI</a></li>
+        <li class="nav-item"><a href="/produksi/" class="nav-link" style="color: black;">Data Produksi</a></li>
+        <li class="nav-item dropdown">
+          <a style="color: black;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tambah Data
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/tambahlokasi/" style="color: black;">Lokasi</a></li>
+            <li><a class="dropdown-item" href="/tambahproduksi/" style="color: black;">Produksi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="{% url 'logout' %}" class="btn btn-dark" style="color: white;">Logout</a></li>
+      </ul>
+    </header>
+  </div>
